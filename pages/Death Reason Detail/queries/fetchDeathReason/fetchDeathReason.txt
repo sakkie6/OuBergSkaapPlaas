@@ -1,0 +1,1 @@
+SELECT * FROM "DEATH_REASONS" ORDER by "DeathReasonID";

@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6765269cfe58806da85dee0c_63980ff1-3565-4e1b-aee8-a4cdd8326b9c",
+  "id": "Herds Detail_jsSubmitHerd",
+  "unpublishedCollection": {
+    "name": "jsSubmitHerd",
+    "pageId": "Herds Detail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

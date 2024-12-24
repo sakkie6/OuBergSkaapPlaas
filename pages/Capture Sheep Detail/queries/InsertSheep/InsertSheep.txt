@@ -1,0 +1,26 @@
+INSERT INTO "SHEEP" (
+  "EarTagNumber",
+  "DateBorn",
+  "Gender",
+  "CurrentHerdID",
+  "BirthStatusID",
+  "IsAlive",
+  "OriginID",
+  "DateDeceased",
+  "DeathReasonID",
+  "EarTagColourID"
+)
+VALUES (
+  {{ TextInput_EarTagNumber.text }},
+  {{ DatePicker_DateBorn.selectedDate }},
+  {{ Select_Gender.selectedOptionValue }},
+  {{ Select_Herd.selectedOptionValue || null }},
+  {{ Select_BirthStatus.selectedOptionValue || null }},
+  {{ Checkbox_IsAlive.isChecked }},
+  {{ Select_Origin.selectedOptionValue || null }},
+  {{ DatePicker_DateDeceased.selectedDate || null }},
+  {{ Select_DeathReason.selectedOptionValue === "" 
+  ? null 
+  : Select_DeathReason.selectedOptionValue }},
+  {{ Select_EarTagColour.selectedOptionValue || null }}
+);

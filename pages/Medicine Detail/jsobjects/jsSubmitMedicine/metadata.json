@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6765269cfe58806da85dee0c_cfc8b80e-f8a6-49fb-953f-7caa794a1632",
+  "id": "Medicine Detail_jsSubmitMedicine",
+  "unpublishedCollection": {
+    "name": "jsSubmitMedicine",
+    "pageId": "Medicine Detail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 62,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "canFreezeColumn": true,
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "MedicineID",
+    "MedicineName",
+    "MedicineDescription",
+    "MedicineCostPerDosageUnit"
+  ],
+  "columnUpdatedAt": 1734718839909,
+  "columnWidthMap": {
+    "MedicineDescription": 689,
+    "MedicineID": 115
+  },
+  "customIsLoading": false,
+  "customIsLoadingValue": "",
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.MedicineID.computedValue"
+    },
+    {
+      "key": "primaryColumns.MedicineName.computedValue"
+    },
+    {
+      "key": "primaryColumns.MedicineCostPerDosageUnit.computedValue"
+    },
+    {
+      "key": "primaryColumns.MedicineDescription.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableClientSideSearch": true,
+  "flexVerticalAlignment": "start",
+  "horizontalAlignment": "LEFT",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": false,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "wep5tyogii",
+  "label": "Data",
+  "leftColumn": 1,
+  "minWidth": 450,
+  "mobileBottomRow": 44,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 16,
+  "needsErrorInfo": false,
+  "originalBottomRow": 62,
+  "originalTopRow": 25,
+  "parentColumnSpace": 20.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumnId": "MedicineID",
+  "primaryColumns": {
+    "MedicineCostPerDosageUnit": {
+      "alias": "MedicineCostPerDosageUnit",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "currency",
+      "computedValue": "{{MedicineTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedicineCostPerDosageUnit\"]))}}",
+      "currencyCode": "ZAR",
+      "decimals": 2,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "MedicineCostPerDosageUnit",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Medicine Cost Per Dosage Unit (g/ml)",
+      "notation": "standard",
+      "originalId": "MedicineCostPerDosageUnit",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "MedicineDescription": {
+      "alias": "MedicineDescription",
+      "allowCellWrapping": true,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{MedicineTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedicineDescription\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "MedicineDescription",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Medicine Description",
+      "notation": "standard",
+      "originalId": "MedicineDescription",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "MedicineID": {
+      "alias": "MedicineID",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "number",
+      "computedValue": "{{MedicineTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedicineID\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "MedicineID",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "MedicineID",
+      "notation": "standard",
+      "originalId": "MedicineID",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "MedicineName": {
+      "alias": "MedicineName",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{MedicineTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedicineName\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "MedicineName",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Medicine Name",
+      "notation": "standard",
+      "originalId": "MedicineName",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "searchKey": "",
+  "tableData": "{{fetchMedicineList.data}}",
+  "textSize": "0.875rem",
+  "topRow": 25,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "version": 2,
+  "verticalAlignment": "CENTER",
+  "widgetId": "6aea8y4xgj",
+  "widgetName": "MedicineTable"
+}

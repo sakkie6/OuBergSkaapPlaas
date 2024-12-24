@@ -1,0 +1,4 @@
+UPDATE "BIRTH_STATUS"
+SET "BirthStatus" = '{{EditBirthStatusNameInput.text}}',
+    "BirthStatusDescription" = '{{EditBirthStatusDescriptionInp.text}}'
+WHERE "BirthStatusID" = '{{BirthStatusTable.selectedRow.BirthStatusID}}';

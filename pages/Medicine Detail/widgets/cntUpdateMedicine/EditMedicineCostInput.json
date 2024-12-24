@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "boxShadow": "none",
+  "defaultText": "{{\n  MedicineTable.selectedRow.MedicineCostPerDosageUnit\n    ? Number(MedicineTable.selectedRow.MedicineCostPerDosageUnit).toFixed(2)\n    : \"0.00\"\n}}\n\n\n",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "gg2evi7knv",
+  "label": "Updated medicine cost",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 59,
+  "mobileLeftColumn": 41,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 52,
+  "needsErrorInfo": false,
+  "originalBottomRow": 20,
+  "originalTopRow": 13,
+  "parentColumnSpace": 20.125,
+  "parentId": "62fjr0ne8o",
+  "parentRowSpace": 10,
+  "regex": "^\\d+(\\.\\d{1,2})?$",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 28,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 12,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "twoi2cbyhd",
+  "widgetName": "EditMedicineCostInput"
+}

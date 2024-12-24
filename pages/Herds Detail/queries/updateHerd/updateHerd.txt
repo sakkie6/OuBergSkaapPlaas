@@ -1,0 +1,4 @@
+UPDATE "HERDS"
+SET "HerdName" = '{{EditHerdNameInput.text}}',
+    "HerdDescription" = '{{EditHerdDescriptionInput.text}}'
+WHERE "HerdID" = '{{HerdsTable.selectedRow.HerdID}}';

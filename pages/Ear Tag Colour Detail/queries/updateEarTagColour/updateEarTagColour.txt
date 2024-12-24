@@ -1,0 +1,4 @@
+UPDATE "EAR_TAG_COLOUR"
+SET "EarTagColourName" = '{{EditETCInput.text}}',
+    "EarTagColourDescription" = '{{EditETCDescInp.text}}'
+WHERE "EarTagColourID" = '{{ETCTable.selectedRow.EarTagColourID}}';

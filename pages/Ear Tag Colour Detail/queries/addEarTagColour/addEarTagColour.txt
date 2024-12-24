@@ -1,0 +1,2 @@
+INSERT INTO "EAR_TAG_COLOUR" ("EarTagColourName", "EarTagColourDescription")
+VALUES ('{{ETCNameInput.text}}', '{{ETCDescInput.text}}');

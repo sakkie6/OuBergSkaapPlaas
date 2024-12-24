@@ -1,0 +1,4 @@
+UPDATE "ORIGIN"
+SET "Origin" = '{{EditOriginNameInput.text}}',
+    "OriginDescription" = '{{EditOriginDescriptionInput.text}}'
+WHERE "OriginID" = '{{OriginTable.selectedRow.OriginID}}';

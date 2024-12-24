@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 15,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rvuvb92l5g",
+  "leftColumn": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 5,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "onClick": "{{jsSubmitDeathReason.AddDeathReasonButtononClick();}}",
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
+  "parentColumnSpace": 20.125,
+  "parentId": "fges8br4se",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 24,
+  "text": "Submit New Death Reason",
+  "topRow": 11,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "idi7je2n7u",
+  "widgetName": "AddDeathReasonButton"
+}

@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 24,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  Table_Sheep.selectedRow && Table_Sheep.selectedRow.DeathReasonID \n   ? Table_Sheep.selectedRow.DeathReasonID \n   : \"\" \n))(Select_DeathReasonUpd.options, Select_DeathReasonUpd.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "qrfieigaib",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Death Reason",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 42,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 24,
+  "mobileLeftColumn": 42,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 17,
+  "needsErrorInfo": false,
+  "optionLabel": "DeathReason",
+  "optionValue": "DeathReasonID",
+  "originalBottomRow": 24,
+  "originalTopRow": 17,
+  "parentColumnSpace": 14.404296875,
+  "parentId": "0dql32yr11",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": "{{GetDeathReasons.data}}",
+  "topRow": 17,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "q9w8mlpmh7",
+  "widgetName": "Select_DeathReasonUpd"
+}

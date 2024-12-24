@@ -1,0 +1,18 @@
+
+
+UPDATE "SHEEP"
+SET
+  "EarTagNumber"       = {{ TextInput_EarTagNumberUpd.text || null }},
+  "DateBorn"           = {{ DatePicker_DateBornUpd.selectedDate || null }},
+  "Gender"             = {{ Select_GenderUpd.selectedOptionValue || null }},
+  "CurrentHerdID"      = {{ Select_HerdUpd.selectedOptionValue || null }},
+  "BirthStatusID"      = {{ Select_BirthStatusUpd.selectedOptionValue || null }},
+  "IsAlive"            = {{ Checkbox_IsAliveUpd.isChecked }},
+  "OriginID"           = {{ Select_OriginUpd.selectedOptionValue || null }},
+  "DateDeceased"       = {{ DatePicker_DateDeceasedUpd.selectedDate || null }},
+  "DeathReasonID" = {{ Select_DeathReason.selectedOptionValue === "" 
+  ? null 
+  : Select_DeathReason.selectedOptionValue }},
+  "EarTagColourID"     = {{ Select_EarTagColourUpd.selectedOptionValue || null }}
+WHERE 
+  "SheepID"            = {{ Table_Sheep.selectedRow.SheepID }};

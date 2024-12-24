@@ -1,0 +1,2 @@
+INSERT INTO "DEATH_REASONS" ("DeathReason", "DeathReasonDescription")
+VALUES ('{{DeathReasonNameInput.text}}', '{{DeathReasonDescInput.text}}');

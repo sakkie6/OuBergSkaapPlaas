@@ -1,0 +1,2 @@
+INSERT INTO "BIRTH_STATUS" ("BirthStatus", "BirthStatusDescription")
+VALUES ('{{BirthStatusNameInput.text}}', '{{BirthStatusDescriptionInput.text}}');

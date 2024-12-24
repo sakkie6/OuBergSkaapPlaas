@@ -1,0 +1,5 @@
+SELECT 
+    "OriginID", 
+    "Origin"
+FROM "ORIGIN"
+ORDER BY "Origin";

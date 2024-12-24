@@ -1,0 +1,5 @@
+SELECT 
+    "BirthStatusID", 
+    "BirthStatus" 
+FROM "BIRTH_STATUS"
+ORDER BY "BirthStatus";

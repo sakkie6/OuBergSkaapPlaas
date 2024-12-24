@@ -1,0 +1,5 @@
+SELECT 
+    "HerdID", 
+    "HerdName" 
+FROM "HERDS"
+ORDER BY "HerdName";

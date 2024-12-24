@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6765269cfe58806da85dee0c_81146e56-8c7a-48c9-a29f-6253b7eef47a",
+  "id": "Death Reason Detail_jsSubmitDeathReason",
+  "unpublishedCollection": {
+    "name": "jsSubmitDeathReason",
+    "pageId": "Death Reason Detail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

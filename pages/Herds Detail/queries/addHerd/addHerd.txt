@@ -1,0 +1,2 @@
+INSERT INTO "HERDS" ("HerdName", "HerdDescription")
+VALUES ('{{HerdNameInput.text}}', '{{HerdDescriptionInput.text}}');

@@ -1,0 +1,2 @@
+INSERT INTO "ORIGIN" ("Origin", "OriginDescription")
+VALUES ('{{OriginNameInput.text}}', '{{OriginDescriptionInput.text}}');

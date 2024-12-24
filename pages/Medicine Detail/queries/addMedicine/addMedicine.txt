@@ -1,0 +1,2 @@
+INSERT INTO "MEDICINE_LIST" ("MedicineName", "MedicineCostPerDosageUnit", "MedicineDescription")
+VALUES ('{{MedicineNameInput.text}}', '{{MedicineCostInput.text}}', '{{MedicineDescriptionInput.text}}');

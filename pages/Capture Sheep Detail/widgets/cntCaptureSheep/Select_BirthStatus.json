@@ -1,0 +1,62 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 15,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "qrfieigaib",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Select BirthStatus ",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 21,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 20,
+  "mobileLeftColumn": 27,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 13,
+  "needsErrorInfo": false,
+  "optionLabel": "BirthStatus",
+  "optionValue": "BirthStatusID",
+  "parentColumnSpace": 14.13671875,
+  "parentId": "4mxsqiz788",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 41,
+  "serverSideFiltering": false,
+  "sourceData": "{{ GetBirthStatuses.data}}",
+  "topRow": 8,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "xht1qm73tb",
+  "widgetName": "Select_BirthStatus"
+}

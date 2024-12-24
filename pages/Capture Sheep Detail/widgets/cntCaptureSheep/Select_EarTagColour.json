@@ -1,0 +1,62 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 24,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "qrfieigaib",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Select Ear Tag Colour ",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 24,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 17,
+  "needsErrorInfo": false,
+  "optionLabel": "EarTagColourName",
+  "optionValue": "EarTagColourID",
+  "parentColumnSpace": 14.404296875,
+  "parentId": "4mxsqiz788",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 20,
+  "serverSideFiltering": false,
+  "sourceData": "{{GetEarTagColours.data}}",
+  "topRow": 17,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "0jydq7ruw1",
+  "widgetName": "Select_EarTagColour"
+}

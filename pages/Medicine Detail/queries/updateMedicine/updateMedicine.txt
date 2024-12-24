@@ -1,0 +1,5 @@
+UPDATE "MEDICINE_LIST"
+SET "MedicineName" = '{{EditMedicineNameInput.text}}',
+    "MedicineCostPerDosageUnit" = '{{EditMedicineCostInput.text}}',
+    "MedicineDescription" = '{{EditMedicineDescriptionInput.text}}'
+WHERE "MedicineID" = '{{MedicineTable.selectedRow.MedicineID}}';

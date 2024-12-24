@@ -1,0 +1,38 @@
+{
+  "appIsExample": false,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#F4FFDE",
+  "evaluationVersion": 2,
+  "icon": "dog",
+  "pages": [
+    {
+      "id": "Capture Sheep Detail",
+      "isDefault": true
+    },
+    {
+      "id": "Birth Status Detail",
+      "isDefault": false
+    },
+    {
+      "id": "Death Reason Detail",
+      "isDefault": false
+    },
+    {
+      "id": "Ear Tag Colour Detail",
+      "isDefault": false
+    },
+    {
+      "id": "Herds Detail",
+      "isDefault": false
+    },
+    {
+      "id": "Medicine Detail",
+      "isDefault": false
+    },
+    {
+      "id": "Origin Detail",
+      "isDefault": false
+    }
+  ]
+}

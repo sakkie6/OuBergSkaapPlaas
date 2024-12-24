@@ -1,0 +1,4 @@
+UPDATE "DEATH_REASONS"
+SET "DeathReason" = '{{EditDeathReasonInput.text}}',
+    "DeathReasonDescription" = '{{EditDeathReasonDescInp.text}}'
+WHERE "DeathReasonID" = '{{DeathReasonTable.selectedRow.DeathReasonID}}';

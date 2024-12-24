@@ -1,0 +1,32 @@
+SELECT
+  s."SheepID",
+  s."EarTagNumber",
+  s."DateBorn",
+  s."Gender",
+  s."CurrentHerdID",
+  s."BirthStatusID",
+  s."IsAlive",
+  s."OriginID",
+  s."DateDeceased",
+  s."DeathReasonID",
+  s."EarTagColourID",
+
+  -- Aliases for descriptive names
+  h."HerdName" AS "CurrentHerdName",
+  b."BirthStatus" AS "CurrentBirthStatus",
+  o."Origin" AS "CurrentOrigin",
+  d."DeathReason" AS "CurrentDeathReason",
+  c."EarTagColourName" AS "CurrentEarTagColour"
+
+FROM "SHEEP" s
+LEFT JOIN "HERDS" h
+  ON s."CurrentHerdID" = h."HerdID"
+LEFT JOIN "BIRTH_STATUS" b
+  ON s."BirthStatusID" = b."BirthStatusID"
+LEFT JOIN "ORIGIN" o
+  ON s."OriginID" = o."OriginID"
+LEFT JOIN "DEATH_REASONS" d
+  ON s."DeathReasonID" = d."DeathReasonID"
+LEFT JOIN "EAR_TAG_COLOUR" c
+  ON s."EarTagColourID" = c."EarTagColourID"
+ORDER BY s."SheepID" DESC;

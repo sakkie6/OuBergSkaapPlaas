@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ipjfqwsvyp",
+  "leftColumn": 0,
+  "minWidth": 120,
+  "mobileBottomRow": 69,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 65,
+  "needsErrorInfo": false,
+  "onClick": "{{jsUpdateMedicine.btnUpdateMedicineonClick();}}",
+  "originalBottomRow": 24,
+  "originalTopRow": 20,
+  "parentColumnSpace": 20.125,
+  "parentId": "62fjr0ne8o",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 23,
+  "text": "Update Existing Medicine",
+  "topRow": 19,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "yegr8p8pos",
+  "widgetName": "btnUpdateMedicine"
+}

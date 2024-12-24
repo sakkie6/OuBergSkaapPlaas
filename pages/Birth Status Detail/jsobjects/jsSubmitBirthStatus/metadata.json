@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6765269cfe58806da85dee0c_d6fdb287-e954-4852-a78f-77a6b4ec9b72",
+  "id": "Birth Status Detail_jsSubmitBirthStatus",
+  "unpublishedCollection": {
+    "name": "jsSubmitBirthStatus",
+    "pageId": "Birth Status Detail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

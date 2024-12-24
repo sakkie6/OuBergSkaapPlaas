@@ -1,0 +1,55 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "defaultCheckedState": "{{ Table_Sheep.selectedRow ? Table_Sheep.selectedRow.IsAlive : false }}\n",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "4i9077x3wz",
+  "label": "Is Alive",
+  "labelPosition": "Left",
+  "leftColumn": 58,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 49,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 13,
+  "needsErrorInfo": false,
+  "originalBottomRow": 6,
+  "originalTopRow": 2,
+  "parentColumnSpace": 14.13671875,
+  "parentId": "0dql32yr11",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 2,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "mpffexmh5s",
+  "widgetName": "Checkbox_IsAliveUpd"
+}

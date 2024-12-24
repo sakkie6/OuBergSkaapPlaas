@@ -1,0 +1,1 @@
+SELECT * FROM "BIRTH_STATUS" ORDER by "BirthStatusID";

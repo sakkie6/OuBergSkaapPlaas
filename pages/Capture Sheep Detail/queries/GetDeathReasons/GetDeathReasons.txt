@@ -1,0 +1,5 @@
+SELECT 
+    "DeathReasonID", 
+    "DeathReason"
+FROM "DEATH_REASONS"
+ORDER BY "DeathReason";

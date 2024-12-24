@@ -1,0 +1,1 @@
+SELECT * FROM "EAR_TAG_COLOUR" ORDER by "EarTagColourID";
