@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6765269cfe58806da85dee0c_05559895-1a80-4ba7-99d9-5ad22c2e912c",
+  "id": "Suppliers Detail_jsSubmitSupplier",
+  "unpublishedCollection": {
+    "name": "jsSubmitSupplier",
+    "pageId": "Suppliers Detail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -46,9 +46,10 @@
     "CurrentBirthStatus",
     "CurrentOrigin",
     "DateDeceased",
-    "CurrentDeathReason"
+    "CurrentDeathReason",
+    "NumberOfTeeth"
   ],
-  "columnUpdatedAt": 1734892334148,
+  "columnUpdatedAt": 1735581260499,
   "columnWidthMap": {
     "Gender": 88,
     "IsAlive": 88
@@ -121,6 +122,9 @@
     },
     {
       "key": "primaryColumns.CurrentEarTagColour.computedValue"
+    },
+    {
+      "key": "primaryColumns.NumberOfTeeth.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -585,6 +589,40 @@
       "notation": "standard",
       "originalId": "IsAlive",
       "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "NumberOfTeeth": {
+      "alias": "NumberOfTeeth",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table_Sheep.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NumberOfTeeth\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "NumberOfTeeth",
+      "index": 11,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "NumberOfTeeth",
+      "notation": "standard",
+      "originalId": "NumberOfTeeth",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

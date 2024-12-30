@@ -1,0 +1,4 @@
+UPDATE "SUPPLIERS"
+SET "Supplier" = '{{EditSupplierInput.text}}',
+    "SupplierNotes" = '{{EditSupplierNotesInput.text}}'
+WHERE "SupplierID" = '{{SuppliersTable.selectedRow.SupplierID}}';

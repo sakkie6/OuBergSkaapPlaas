@@ -1,0 +1,8 @@
+UPDATE public."SHEEP"
+SET "NumberOfTeeth" = CASE
+    WHEN EXTRACT(YEAR FROM AGE(CURRENT_DATE, "DateBorn")) < 1 THEN 'Lam'
+    WHEN EXTRACT(YEAR FROM AGE(CURRENT_DATE, "DateBorn")) < 2 THEN '2 tand'
+    WHEN EXTRACT(YEAR FROM AGE(CURRENT_DATE, "DateBorn")) < 3 THEN '4 tand'
+    WHEN EXTRACT(YEAR FROM AGE(CURRENT_DATE, "DateBorn")) < 4 THEN '6 tand'
+    ELSE 'Volbek'
+END;

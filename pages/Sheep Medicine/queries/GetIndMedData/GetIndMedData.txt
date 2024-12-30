@@ -1,0 +1,15 @@
+SELECT 
+  im."IndividualMedicineID",
+  im."SheepID",
+  s."EarTagNumber",
+  im."MedicineID",
+  ml."MedicineName",
+  im."MedicineDate",
+  im."IndDosage",
+  im."MedUnitCost",
+  im."DosageCost",
+  im."IndMedNotes"
+FROM "INDIVIDUAL_MEDICINE" AS im
+JOIN "SHEEP" AS s ON im."SheepID" = s."SheepID"
+JOIN "MEDICINE_LIST" AS ml ON im."MedicineID" = ml."MedicineID"
+ORDER BY im."MedicineDate" DESC;

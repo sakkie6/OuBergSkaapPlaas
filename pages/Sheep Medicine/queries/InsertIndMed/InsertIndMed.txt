@@ -1,0 +1,16 @@
+INSERT INTO "INDIVIDUAL_MEDICINE" 
+("SheepID", "MedicineID", "MedicineDate", "IndDosage", "IndMedNotes", "MedUnitCost", "DosageCost")
+VALUES
+(
+ '{{inpSheepID.selectedOptionValue}}',
+ '{{inpMedicineID.selectedOptionValue}}',
+ '{{inpMedicineDate.selectedDate}}',
+ '{{inpIndDosage.text }}',
+ '{{inpIndMedNotes.text }}',
+ '{{inpMedUnitCost.value }}', 
+ '{{inpDosageCost.value }}'
+	
+
+)
+
+RETURNING *

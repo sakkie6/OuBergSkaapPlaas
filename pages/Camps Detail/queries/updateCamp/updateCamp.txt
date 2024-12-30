@@ -1,0 +1,4 @@
+UPDATE "CAMPS"
+SET "Camp" = '{{EditCampInput.text}}',
+    "CampNotes" = '{{EditCampNotesInput.text}}'
+WHERE "CampID" = '{{CampsTable.selectedRow.CampID}}';

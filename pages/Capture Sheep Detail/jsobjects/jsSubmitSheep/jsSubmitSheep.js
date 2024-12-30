@@ -76,7 +76,9 @@ export default {
       resetWidget("Select_EarTagColour");
       
       // 5. Refresh the table data
-      GetSheep.run();
+      UpdTeeth.run();
+			GetSheep.run();
+			
 
     } catch (error) {
       // 6. Show a more descriptive error message if InsertSheep fails

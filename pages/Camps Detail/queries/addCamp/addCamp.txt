@@ -1,0 +1,2 @@
+INSERT INTO "CAMPS" ("Camp", "CampNotes")
+VALUES ('{{CampInput.text}}', '{{CampNotesInput.text}}');

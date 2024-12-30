@@ -7,8 +7,12 @@
   "icon": "dog",
   "pages": [
     {
-      "id": "Capture Sheep Detail",
+      "id": "Admin",
       "isDefault": true
+    },
+    {
+      "id": "Capture Sheep Detail",
+      "isDefault": false
     },
     {
       "id": "Birth Status Detail",
@@ -32,6 +36,18 @@
     },
     {
       "id": "Origin Detail",
+      "isDefault": false
+    },
+    {
+      "id": "Sheep Medicine",
+      "isDefault": false
+    },
+    {
+      "id": "Camps Detail",
+      "isDefault": false
+    },
+    {
+      "id": "Suppliers Detail",
       "isDefault": false
     }
   ]

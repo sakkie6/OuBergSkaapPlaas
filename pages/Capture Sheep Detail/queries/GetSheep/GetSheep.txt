@@ -10,6 +10,7 @@ SELECT
   s."DateDeceased",
   s."DeathReasonID",
   s."EarTagColourID",
+	s."NumberOfTeeth",
 
   -- Aliases for descriptive names
   h."HerdName" AS "CurrentHerdName",

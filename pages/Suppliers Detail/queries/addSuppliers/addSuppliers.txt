@@ -1,0 +1,2 @@
+INSERT INTO "SUPPLIERS" ("Supplier", "SupplierNotes")
+VALUES ('{{SupplierInput.text}}', '{{SupplierNotesInput.text}}');

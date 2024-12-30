@@ -1,0 +1,11 @@
+UPDATE "INDIVIDUAL_MEDICINE"
+SET 
+  "SheepID"       = {{ updSheepID.selectedOptionValue }},
+  "MedicineID"    = {{ updMedicineID.selectedOptionValue }},
+  "MedicineDate"  = {{ updMedicineDate.selectedDate }},
+  "IndDosage"     = {{ updIndDosage.text }},
+  "IndMedNotes"   = {{ updIndMedNotes.text }},
+  "MedUnitCost"   = {{ updMedUnitCost.value }},
+  "DosageCost"    = {{ updDosageCost.value }}
+WHERE "IndividualMedicineID" = {{ IndMedTable.selectedRow.IndividualMedicineID }};
+
