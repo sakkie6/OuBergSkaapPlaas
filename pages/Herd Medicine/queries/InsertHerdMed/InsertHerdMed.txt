@@ -1,0 +1,16 @@
+INSERT INTO "HERD_MEDICINE" 
+("HerdID", "MedicineID", "MedicineDate", "HerdDosage", "HerdMedNotes", "MedUnitCost", "DosageCost")
+VALUES
+(
+ '{{inpHerdID.selectedOptionValue}}',
+ '{{inpMedicineID.selectedOptionValue}}',
+ '{{inpMedicineDate.selectedDate}}',
+ '{{inpHerdDosage.text }}',
+ '{{inpHerdMedNotes.text }}',
+ '{{inpMedUnitCost.value }}', 
+ '{{inpDosageCost.value }}'
+	
+
+)
+
+RETURNING *

@@ -1,0 +1,15 @@
+SELECT 
+  im."HerdMedicineID",
+  im."HerdID",
+  s."HerdName",
+  im."MedicineID",
+  ml."MedicineName",
+  im."MedicineDate",
+  im."HerdDosage",
+  im."MedUnitCost",
+  im."DosageCost",
+  im."HerdMedNotes"
+FROM "HERD_MEDICINE" AS im
+JOIN "HERDS" AS s ON im."HerdID" = s."HerdID"
+JOIN "MEDICINE_LIST" AS ml ON im."MedicineID" = ml."MedicineID"
+ORDER BY im."MedicineDate" DESC;

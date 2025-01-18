@@ -1,12 +1,12 @@
 {
-  "gitSyncId": "6765269cfe58806da85dee0c_d2c0e39c-8e5b-4071-a49b-79708050e50e",
+  "gitSyncId": "6765269cfe58806da85dee0c_1b7645e3-644b-4355-91cd-452530a2019b",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 880,
+          "bottomRow": 1010,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "Admin",
-    "slug": "admin"
+    "name": "Herd Medicine",
+    "slug": "herd-medicine"
   }
 }

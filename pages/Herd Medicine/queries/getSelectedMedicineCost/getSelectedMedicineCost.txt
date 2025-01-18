@@ -1,0 +1,10 @@
+SELECT "MedicineCostPerDosageUnit"
+FROM "MEDICINE_LIST"
+WHERE "MedicineID" = 
+    CASE 
+      WHEN {{ !inpMedicineID.selectedOptionValue || inpMedicineID.selectedOptionValue === "" }} 
+        THEN -1 
+      ELSE {{ inpMedicineID.selectedOptionValue }} 
+    END
+;
+

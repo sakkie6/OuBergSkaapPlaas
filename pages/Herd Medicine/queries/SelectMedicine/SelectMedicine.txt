@@ -1,0 +1,1 @@
+SELECT "MedicineID", "MedicineName", "MedicineCostPerDosageUnit" FROM "MEDICINE_LIST" ORDER BY "MedicineName";

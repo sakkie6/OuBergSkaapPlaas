@@ -1,10 +1,14 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowCurrencyChange": false,
   "animateLoading": true,
+  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 13,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "decimals": 2,
+  "defaultCurrencyCode": "ZAR",
+  "defaultText": "{{ getSelectedMedicineCost.data[0]?.MedicineCostPerDosageUnit || 0 }}\n",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,55 +17,45 @@
       "key": "borderRadius"
     },
     {
-      "key": "sourceData"
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "sourceData"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
   "isDisabled": false,
-  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "1t4vq16ehr",
+  "key": "fvjtx6gwv7",
+  "label": "Medicine Unit Cost (g/ml)",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Medicine Given",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 23,
+  "leftColumn": 44,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 20,
-  "mobileLeftColumn": 2,
-  "mobileRightColumn": 22,
-  "mobileTopRow": 13,
+  "mobileBottomRow": 58,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 49,
+  "mobileTopRow": 51,
   "needsErrorInfo": false,
-  "onOptionChange": "{{getSelectedMedicineCost.run()}}",
-  "optionLabel": "MedicineName",
-  "optionValue": "MedicineID",
-  "parentColumnSpace": 8.78515625,
+  "originalBottomRow": 58,
+  "originalTopRow": 51,
+  "parentColumnSpace": 17.125,
   "parentId": "tkdg3agm3w",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
   "renderMode": "CANVAS",
+  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 43,
-  "serverSideFiltering": false,
-  "sourceData": "{{SelectMedicine.data}}",
+  "rightColumn": 64,
+  "showStepArrows": false,
   "topRow": 6,
-  "type": "SELECT_WIDGET",
+  "type": "CURRENCY_INPUT_WIDGET",
   "version": 1,
-  "widgetId": "yeiz0zmqf6",
-  "widgetName": "inpMedicineID"
+  "widgetId": "k958s75xb7",
+  "widgetName": "inpMedUnitCost"
 }

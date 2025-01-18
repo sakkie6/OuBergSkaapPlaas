@@ -11,11 +11,15 @@
       "isDefault": true
     },
     {
-      "id": "Capture Sheep Detail",
+      "id": "Birth Status Detail",
       "isDefault": false
     },
     {
-      "id": "Birth Status Detail",
+      "id": "Camps Detail",
+      "isDefault": false
+    },
+    {
+      "id": "Capture Sheep Detail",
       "isDefault": false
     },
     {
@@ -43,11 +47,15 @@
       "isDefault": false
     },
     {
-      "id": "Camps Detail",
+      "id": "Suppliers Detail",
       "isDefault": false
     },
     {
-      "id": "Suppliers Detail",
+      "id": "Herd Medicine",
+      "isDefault": false
+    },
+    {
+      "id": "Herd History",
       "isDefault": false
     }
   ]

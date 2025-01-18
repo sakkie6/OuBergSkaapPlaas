@@ -2,9 +2,12 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 21,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "closeOnSelection": true,
+  "dateFormat": "DD-MM-YYYY",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{ HerdMedTable.selectedRow ? HerdMedTable.selectedRow.MedicineDate : null }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,55 +16,49 @@
       "key": "borderRadius"
     },
     {
-      "key": "sourceData"
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "sourceData"
+      "key": "defaultDate"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
+  "dynamicTriggerPathList": [],
+  "firstDayOfWeek": 0,
   "isDisabled": false,
-  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "1t4vq16ehr",
+  "key": "g1pfhjaj8w",
+  "label": "Date Medicine Given",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Medicine Given",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 23,
+  "leftColumn": 2,
+  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 20,
+  "mobileBottomRow": 28,
   "mobileLeftColumn": 2,
   "mobileRightColumn": 22,
-  "mobileTopRow": 13,
+  "mobileTopRow": 21,
   "needsErrorInfo": false,
-  "onOptionChange": "{{getSelectedMedicineCost.run()}}",
-  "optionLabel": "MedicineName",
-  "optionValue": "MedicineID",
-  "parentColumnSpace": 8.78515625,
-  "parentId": "tkdg3agm3w",
+  "parentColumnSpace": 16.8125,
+  "parentId": "nt9whgetzj",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 43,
-  "serverSideFiltering": false,
-  "sourceData": "{{SelectMedicine.data}}",
-  "topRow": 6,
-  "type": "SELECT_WIDGET",
-  "version": 1,
-  "widgetId": "yeiz0zmqf6",
-  "widgetName": "inpMedicineID"
+  "rightColumn": 22,
+  "shortcuts": false,
+  "timePrecision": "None",
+  "topRow": 14,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "0ld4kjzu1u",
+  "widgetName": "updMedicineDate"
 }

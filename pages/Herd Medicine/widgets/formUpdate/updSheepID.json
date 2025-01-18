@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 12,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  HerdMedTable.selectedRow ? HerdMedTable.selectedRow.HerdID : null ))(updSheepID.options, updSheepID.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -22,11 +25,7 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -35,33 +34,34 @@
   "key": "1t4vq16ehr",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Medicine Given",
+  "labelText": "Herd",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 23,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 20,
+  "mobileBottomRow": 6,
   "mobileLeftColumn": 2,
   "mobileRightColumn": 22,
-  "mobileTopRow": 13,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{getSelectedMedicineCost.run()}}",
-  "optionLabel": "MedicineName",
-  "optionValue": "MedicineID",
-  "parentColumnSpace": 8.78515625,
-  "parentId": "tkdg3agm3w",
+  "optionLabel": "HerdName",
+  "optionValue": "HerdID",
+  "originalBottomRow": 12,
+  "originalTopRow": 6,
+  "parentColumnSpace": 6.109375,
+  "parentId": "nt9whgetzj",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 43,
+  "rightColumn": 22,
   "serverSideFiltering": false,
-  "sourceData": "{{SelectMedicine.data}}",
+  "sourceData": "{{SelectHerd.data}}",
   "topRow": 6,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "yeiz0zmqf6",
-  "widgetName": "inpMedicineID"
+  "widgetId": "4lxqxcopwf",
+  "widgetName": "updSheepID"
 }

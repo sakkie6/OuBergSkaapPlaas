@@ -31,18 +31,18 @@
     }
   },
   "columnOrder": [
-    "IndividualMedicineID",
-    "SheepID",
-    "EarTagNumber",
     "MedicineID",
     "MedicineName",
     "MedicineDate",
-    "IndDosage",
+    "HerdDosage",
     "MedUnitCost",
     "DosageCost",
-    "IndMedNotes"
+    "HerdMedicineID",
+    "HerdID",
+    "HerdName",
+    "HerdMedNotes"
   ],
-  "columnUpdatedAt": 1735316217819,
+  "columnUpdatedAt": 1735626424908,
   "columnWidthMap": {
     "EarTagNumber": 141
   },
@@ -68,15 +68,6 @@
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.IndividualMedicineID.computedValue"
-    },
-    {
-      "key": "primaryColumns.SheepID.computedValue"
-    },
-    {
-      "key": "primaryColumns.EarTagNumber.computedValue"
-    },
-    {
       "key": "primaryColumns.MedicineID.computedValue"
     },
     {
@@ -86,16 +77,25 @@
       "key": "primaryColumns.MedicineDate.computedValue"
     },
     {
-      "key": "primaryColumns.IndDosage.computedValue"
-    },
-    {
       "key": "primaryColumns.MedUnitCost.computedValue"
     },
     {
       "key": "primaryColumns.DosageCost.computedValue"
     },
     {
-      "key": "primaryColumns.IndMedNotes.computedValue"
+      "key": "primaryColumns.HerdMedicineID.computedValue"
+    },
+    {
+      "key": "primaryColumns.HerdID.computedValue"
+    },
+    {
+      "key": "primaryColumns.HerdName.computedValue"
+    },
+    {
+      "key": "primaryColumns.HerdDosage.computedValue"
+    },
+    {
+      "key": "primaryColumns.HerdMedNotes.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -128,7 +128,7 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 32,
   "needsErrorInfo": false,
-  "onRowSelected": "{{updSelectedMedicineCost.run()}}",
+  "onRowSelected": "{{updMedicineCost.run()}}",
   "originalBottomRow": 60,
   "originalTopRow": 32,
   "parentColumnSpace": 16.96875,
@@ -140,7 +140,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "currency",
-      "computedValue": "{{IndMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"DosageCost\"]))}}",
+      "computedValue": "{{HerdMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"DosageCost\"]))}}",
       "currencyCode": "ZAR",
       "decimals": 2,
       "enableFilter": true,
@@ -166,49 +166,18 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "EarTagNumber": {
-      "alias": "EarTagNumber",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{IndMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"EarTagNumber\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "EarTagNumber",
-      "index": 2,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "EarTagNumber",
-      "notation": "standard",
-      "originalId": "EarTagNumber",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "IndDosage": {
-      "alias": "IndDosage",
+    "HerdDosage": {
+      "alias": "HerdDosage",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{IndMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"IndDosage\"]))}}",
+      "computedValue": "{{HerdMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"HerdDosage\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
-      "id": "IndDosage",
+      "id": "HerdDosage",
       "index": 6,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -218,9 +187,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Dosage Given (g/ml)",
+      "label": "Dosage given",
       "notation": "standard",
-      "originalId": "IndDosage",
+      "originalId": "HerdDosage",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -228,18 +197,49 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "IndMedNotes": {
-      "alias": "IndMedNotes",
+    "HerdID": {
+      "alias": "HerdID",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{IndMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"IndMedNotes\"]))}}",
+      "columnType": "number",
+      "computedValue": "{{HerdMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"HerdID\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
-      "id": "IndMedNotes",
+      "id": "HerdID",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": false,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "HerdID",
+      "notation": "standard",
+      "originalId": "HerdID",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "HerdMedNotes": {
+      "alias": "HerdMedNotes",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{HerdMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"HerdMedNotes\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "HerdMedNotes",
       "index": 9,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -249,9 +249,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "IndMedNotes",
+      "label": "HerdMedNotes",
       "notation": "standard",
-      "originalId": "IndMedNotes",
+      "originalId": "HerdMedNotes",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -259,18 +259,18 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "IndividualMedicineID": {
-      "alias": "IndividualMedicineID",
+    "HerdMedicineID": {
+      "alias": "HerdMedicineID",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{IndMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"IndividualMedicineID\"]))}}",
+      "computedValue": "{{HerdMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"HerdMedicineID\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
-      "id": "IndividualMedicineID",
+      "id": "HerdMedicineID",
       "index": 0,
       "isCellEditable": false,
       "isCellVisible": false,
@@ -280,9 +280,40 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "IndividualMedicineID",
+      "label": "HerdMedicineID",
       "notation": "standard",
-      "originalId": "IndividualMedicineID",
+      "originalId": "HerdMedicineID",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "HerdName": {
+      "alias": "HerdName",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{HerdMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"HerdName\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "HerdName",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "HerdName",
+      "notation": "standard",
+      "originalId": "HerdName",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -295,7 +326,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "currency",
-      "computedValue": "{{IndMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedUnitCost\"]))}}",
+      "computedValue": "{{HerdMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedUnitCost\"]))}}",
       "currencyCode": "ZAR",
       "decimals": 2,
       "enableFilter": true,
@@ -326,7 +357,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "date",
-      "computedValue": "{{IndMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedicineDate\"]))}}",
+      "computedValue": "{{HerdMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedicineDate\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -359,7 +390,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{IndMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedicineID\"]))}}",
+      "computedValue": "{{HerdMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedicineID\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -390,7 +421,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{IndMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedicineName\"]))}}",
+      "computedValue": "{{HerdMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MedicineName\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -415,44 +446,13 @@
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
-    },
-    "SheepID": {
-      "alias": "SheepID",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "number",
-      "computedValue": "{{IndMedTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SheepID\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "SheepID",
-      "index": 1,
-      "isCellEditable": false,
-      "isCellVisible": false,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "SheepID",
-      "notation": "standard",
-      "originalId": "SheepID",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
     }
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "tableData": "{{GetIndMedData.data}}",
+  "tableData": "{{GetHerdMedData.data}}",
   "textSize": "0.875rem",
   "topRow": 32,
   "totalRecordsCount": 0,
@@ -460,5 +460,5 @@
   "version": 2,
   "verticalAlignment": "CENTER",
   "widgetId": "4w1983uso8",
-  "widgetName": "IndMedTable"
+  "widgetName": "HerdMedTable"
 }

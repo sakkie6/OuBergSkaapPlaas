@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 13,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  HerdMedTable.selectedRow ? HerdMedTable.selectedRow.MedicineID : null ))(updMedicineID.options, updMedicineID.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -47,21 +50,21 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onOptionChange": "{{getSelectedMedicineCost.run()}}",
-  "optionLabel": "MedicineName",
-  "optionValue": "MedicineID",
+  "onOptionChange": "{{updMedicineCost.run()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
   "parentColumnSpace": 8.78515625,
-  "parentId": "tkdg3agm3w",
+  "parentId": "nt9whgetzj",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 43,
   "serverSideFiltering": false,
-  "sourceData": "{{SelectMedicine.data}}",
+  "sourceData": "{{ \n  SelectMedicine.data.map((med) => ({\n    label: med.MedicineName,\n    value: med.MedicineID,               // Just the ID\n    cost: med.MedicineCostPerDosageUnit  // Additional field\n  }))\n}}",
   "topRow": 6,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "yeiz0zmqf6",
-  "widgetName": "inpMedicineID"
+  "widgetId": "r6mg1ww2ds",
+  "widgetName": "updMedicineID"
 }

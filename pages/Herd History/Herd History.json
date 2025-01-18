@@ -1,12 +1,12 @@
 {
-  "gitSyncId": "6765269cfe58806da85dee0c_d2c0e39c-8e5b-4071-a49b-79708050e50e",
+  "gitSyncId": "6765269cfe58806da85dee0c_d9ecb16d-a3c9-4434-8b53-bc7c612f8964",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 880,
+          "bottomRow": 380,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "Admin",
-    "slug": "admin"
+    "name": "Herd History",
+    "slug": "herd-history"
   }
 }

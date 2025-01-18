@@ -1,0 +1,13 @@
+INSERT INTO "HERD_HISTORY" 
+("SheepID", "FromHerdID", "ToHerdID", "DateMoved", "HerdMoveNotes")
+VALUES
+(
+ '{{inpSelectSheep.selectedOptionValue}}',
+ '{{inpPrevHerd.selectedOptionValue}}',
+ '{{inpNewHerdCopy.selectedOptionValue}}',
+ '{{inpDateMoved.selectedDate }}',
+ '{{inpHerdMoveNotes.text }}'
+
+	)
+
+RETURNING *

@@ -4,11 +4,11 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 6,
   "boxShadow": "none",
   "decimals": 2,
   "defaultCurrencyCode": "ZAR",
-  "defaultText": "{{ IndMedTable.selectedRow ? IndMedTable.selectedRow.MedUnitCost : 0 }}\n",
+  "defaultText": "{{ updMedicineCost.data[0]?.MedicineCostPerDosageUnit || 0 }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -28,10 +28,11 @@
   "isRequired": false,
   "isVisible": true,
   "key": "fvjtx6gwv7",
-  "label": "Medicine Unit Cost (g/ml) when given",
+  "label": "Current Medicine Unit Cost",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
+  "labelTextColor": "#be185d",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 44,
@@ -53,9 +54,9 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "showStepArrows": false,
-  "topRow": 6,
+  "topRow": 0,
   "type": "CURRENCY_INPUT_WIDGET",
   "version": 1,
-  "widgetId": "424flfkczr",
-  "widgetName": "updMedUnitCost"
+  "widgetId": "a3qmx1lpxk",
+  "widgetName": "CurrMedCost"
 }

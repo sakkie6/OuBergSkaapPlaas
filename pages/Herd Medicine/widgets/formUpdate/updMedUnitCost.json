@@ -8,7 +8,7 @@
   "boxShadow": "none",
   "decimals": 2,
   "defaultCurrencyCode": "ZAR",
-  "defaultText": "{{ IndMedTable.selectedRow ? IndMedTable.selectedRow.MedUnitCost : 0 }}\n",
+  "defaultText": "{{ HerdMedTable.selectedRow ? HerdMedTable.selectedRow.MedUnitCost : null }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

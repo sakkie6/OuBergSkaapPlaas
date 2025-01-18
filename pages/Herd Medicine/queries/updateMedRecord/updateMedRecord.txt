@@ -1,0 +1,11 @@
+UPDATE "HERD_MEDICINE"
+SET 
+  "HerdID"       = {{ updSheepID.selectedOptionValue }},
+  "MedicineID"    = {{ updMedicineID.selectedOptionValue }},
+  "MedicineDate"  = {{ updMedicineDate.selectedDate }},
+  "HerdDosage"     = {{ updHerdDosage.text }},
+  "HerdMedNotes"   = {{ updHerdMedNotes.text }},
+  "MedUnitCost"   = {{ updMedUnitCost.value }},
+  "DosageCost"    = {{ updDosageCost.value }}
+WHERE "HerdMedicineID" = {{ HerdMedTable.selectedRow.HerdMedicineID }};
+
